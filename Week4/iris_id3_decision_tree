@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<rarity_Standard &le; 0.5<br/>entropy = 0.595<br/>samples = 704<br/>value = [634.0, 45.0, 15.0, 10.0]<br/>class = 0>, fillcolor="#e88e4e"] ;
+1 [label=<rarity_Mythic &le; 0.5<br/>entropy = 1.287<br/>samples = 70<br/>value = [0, 45, 15, 10]<br/>class = 1>, fillcolor="#9bf193"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<rarity_Ultra beast &le; 0.5<br/>entropy = 0.684<br/>samples = 55<br/>value = [0, 45, 0, 10]<br/>class = 1>, fillcolor="#70eb65"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 45<br/>value = [0, 45, 0, 0]<br/>class = 1>, fillcolor="#47e539"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 10<br/>value = [0, 0, 0, 10]<br/>class = 3>, fillcolor="#d739e5"] ;
+2 -> 4 ;
+5 [label=<entropy = 0.0<br/>samples = 15<br/>value = [0, 0, 15, 0]<br/>class = 2>, fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 634<br/>value = [634, 0, 0, 0]<br/>class = 0>, fillcolor="#e58139"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
